@@ -82,6 +82,7 @@ export default {
   },
   methods: {
     spliceindex(id) {
+      // remove the task from the list
       this.$store.dispatch("todo/deleteitem", id).then(() => {
         this.showByIndex = "";
       });

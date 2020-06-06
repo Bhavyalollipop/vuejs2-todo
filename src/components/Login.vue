@@ -68,10 +68,12 @@ export default {
 
   methods: {
     onSubmit() {
+      //  check if user name not present return the form
       if (!this.form.username) {
         alert("please provide name !");
         return;
       }
+      //  redirect to todo page
       this.$store.dispatch("login/siging", this.form).then(() => {
         this.$router.push({
           name: "GeneralTask"
@@ -80,6 +82,7 @@ export default {
     }
   },
   created() {
+    //  if token present redirect to application
     if (this.token) {
       this.$router.push({
         name: "GeneralTask"
@@ -87,7 +90,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(["token"])
+    ...mapGetters(["token"]) // token stored in the vue
   }
 };
 </script>
