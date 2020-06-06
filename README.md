@@ -9,6 +9,7 @@
 5. search the task
 6. supported languages hindi and english
 
+```
 ## Project setup
 ```
 npm install
