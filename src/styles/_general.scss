@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+html,
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+#app {
+    font-family: "Nunito", sans-serif;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #3e79b4;
+    background-color: #3e79b4;
+    box-shadow: none !important;
+    border-radius: 3px !important;
+}
+
+.custom-control-input~.custom-control-label::before {
+    border-radius: 3px !important;
+    border: 1px solid #bdc4c9;
+    box-shadow: none !important;
+}
+
+@media only screen and (max-width: 559px) {
+    .card {
+        border: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .text-align-media-left {
+        text-align: left !important;
+        margin-right: 0px !important;
+    }
+}
+
+.card {
+    border: 0 !important;
+}
+
+.text-info-blue {
+    color: #3e79b4 !important;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+body {
+    background-image: #fff;
+}
+
+::placeholder {
+    color: #b6b6b6 !important;
+    font-size: 16px;
+}
+
+.vertical-align-middle {
+    vertical-align: middle !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-image: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);
+    border-color: #396cab;
+}
+
+.btn-primary:active {
+    color: #fff;
+    background-image: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);
+    border-color: #396cab;
+    top: 3px;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px !important;
+    position: relative;
+    top: 0px;
+    transition: all ease 0.3s;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to right, #48c6ef 0%, #6f86d6 100%);
+    transition: background-image.3s ease-in-out !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.btn-primary:focus {
+    background-image: linear-gradient(to left,
+            #48c6ef 0%,
+            #6f86d6 100%) !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.btn-primary:active {
+    background-image: linear-gradient(to left,
+            #48c6ef 0%,
+            #6f86d6 100%) !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+input {
+    outline: none !important;
+    /* box-shadow: none !important; */
+    border-radius: 5px !important;
+}
+
+.checkbox #agree-terms {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control {
+    /* border-bottom: 1px solid #bdc4c9 !important; */
+    background-color: unset !important;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.9rem;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    transition: all 200ms;
+    opacity: 0.5;
+    left: 0;
+    cursor: auto;
+    font-size: 15px;
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 86%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+    padding: 7px 0 0 0px;
+    transition: 0.2s;
+    color: #a0a0a0;
+}
+
+.form-control:focus {
+    outline: none;
+}
+
+input {
+    /* -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; */
+    outline: none;
+    border: 1px solid #dddddd;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.login-bg {
+    background: url("../assets/img/register.png") no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0.83);
+    background-position: inherit;
+    height: 650px;
+    top: 120px;
+}
+
+@media only screen and (max-width: 767px) {
+    .login-bg {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .login-bg {
+        top: 245px !important;
+        transform: scale(1.1) !important;
+    }
+}
+
+.task.list-group .list-group-item {
+    background-color: transparent;
+    text-align: left;
+}
+
+.mx-input {
+    display: none !important;
+}
+
+.mx-input-wrapper,
+.mx-input-append {
+    position: unset !important;
+}
+
+.mx-datepicker {
+    width: 22px !important;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    background: #fafafa;
+    z-index: 3;
+    padding: 14px;
+    width: calc(100% - 250px) !important;
+    margin-left: 250px !important;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+}
+
+.home {
+    background-color: #fff;
+}

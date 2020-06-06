@@ -1,25 +1,44 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Login from '@/views/Index.vue'
+import Layout from '@/components/Layout.vue'
+import PlannedTask from '@/views/Task/Planned.vue'
+import GeneralTask from '@/views/Task/Task.vue'
+import ImportantTask from '@/views/Task/ImportantTask.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
+// permission route
+
+const pages = [{
+    path: 'general',
+    name: 'GeneralTask',
+    component: GeneralTask,
+    props: true
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    path: 'important',
+    name: 'ImportantTask',
+    component: ImportantTask,
+    props: true
+  },
+  {
+    path: 'planned',
+    name: 'PlannedTask',
+    component: PlannedTask,
+    props: true
+  },
 ]
-
+const routes = [{
+  path: "/app",
+  name: "Layout",
+  component: Layout,
+  children: pages
+}, {
+  path: "/",
+  name: "Index",
+  component: Login
+}]
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
