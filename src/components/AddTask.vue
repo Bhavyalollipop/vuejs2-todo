@@ -61,6 +61,7 @@ export default {
       };
       this.$store.dispatch("todo/addlist", data).then(() => {
         this.task = "";
+        this.due_date = "";
       });
     }
   },
