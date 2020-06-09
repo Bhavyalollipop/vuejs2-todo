@@ -5,7 +5,7 @@ const state = {
 }
 const mutations = {
   SIGN_IN(state, data) {
-    state.token = JWT.sign(data, process.env.VUE_APP_ENC_KEY)
+    state.token = JWT.sign(data, process.env.VUE_APP_ENC_KEY || 'sigingsecuritykey000011')
   }
 };
 const actions = {
